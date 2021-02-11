@@ -1,2 +1,16 @@
 limits-service.min: 22
 limits-service.max: 2222
+---
+spring:
+ profiles: dev
+
+limits-service:
+  minimum: 1
+  maximum: 1111
+---
+spring:
+ profiles: qa
+
+limits-service:
+  minimum: 3
+  maximum: 3333
